@@ -4,7 +4,7 @@ const nxtButton = document.querySelector(".button-next");
 const bckButton = document.querySelector(".button-back");
 const stage = sidebarStep.length;
 
-let stepNum = 0;
+let stepNum = 1;
 
 function showStep(x) {
   if (x === 0) {
@@ -30,7 +30,7 @@ function showStep(x) {
     formStep[x].classList.add("active");
   }
 }
-showStep(0);
+showStep(stepNum);
 
 nxtButton.addEventListener("click", (e) => {
   e.preventDefault();
