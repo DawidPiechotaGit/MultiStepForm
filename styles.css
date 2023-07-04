@@ -23,8 +23,8 @@
   display: none;
 }
 
-.step.active {
-  display: inline-block;
+.active {
+  display: block;
 }
 
 body {

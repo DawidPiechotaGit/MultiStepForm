@@ -18,11 +18,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js"></script>
 
     <title>Frontend Mentor | Multi-step form</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -69,151 +66,141 @@
           </div>
         </div>
         <div class="steps-container">
-          <div class="step1">
-            <!-- Step 1 start -->
-            <form class="step" id="form">
-              <h3 class="title">Personal info</h3>
+          <form class="step" id="form">
+            <h3 class="title">Personal info</h3>
+            <p class="description">
+              Please provide your name, email address, and phone number
+            </p>
+            <ul class="list">
+              <li class="item-list">
+                <div>
+                  <p class="input-label">Name</p>
+                  <p class="warning"></p>
+                </div>
+                <input
+                  type="text"
+                  name="userName"
+                  class="input"
+                  placeholder="e.g. Stephen King"
+                  required
+                />
+              </li>
+              <li class="item-list">
+                <div>
+                  <p class="input-label">Email Address</p>
+                  <p class="warning"></p>
+                </div>
+                <input
+                  type="text"
+                  name="emailAddress"
+                  class="input"
+                  placeholder="e.g. stephenking@lorem.com"
+                  required
+                />
+              </li>
+              <li class="item-list">
+                <div>
+                  <p class="input-label">Phone Number</p>
+                  <p class="warning"></p>
+                </div>
+                <input
+                  type="number"
+                  name="emailAddress"
+                  class="input"
+                  placeholder="+1 234 567 890"
+                  required
+                />
+              </li>
+            </ul>
+          </form>
+
+          <div class="step" id="step-2">
+            <div>
+              <h3 class="title">Select your plan</h3>
               <p class="description">
-                Please provide your name, email address, and phone number
+                You have the option of monthly or yearly billing.
               </p>
-              <ul class="list">
-                <li class="item-list">
-                  <div>
-                    <p class="input-label">Name</p>
-                    <p class="warning"></p>
-                  </div>
-                  <input
-                    type="text"
-                    name="userName"
-                    class="input"
-                    placeholder="e.g. Stephen King"
-                    required
-                  />
-                </li>
-                <li class="item-list">
-                  <div>
-                    <p class="input-label">Email Address</p>
-                    <p class="warning"></p>
-                  </div>
-                  <input
-                    type="text"
-                    name="emailAddress"
-                    class="input"
-                    placeholder="e.g. stephenking@lorem.com"
-                    required
-                  />
-                </li>
-                <li class="item-list">
-                  <div>
-                    <p class="input-label">Phone Number</p>
-                    <p class="warning"></p>
-                  </div>
-                  <input
-                    type="number"
-                    name="emailAddress"
-                    class="input"
-                    placeholder="+1 234 567 890"
-                    required
-                  />
-                </li>
-              </ul>
-            </form>
+            </div>
+            <div id="arcade">
+              <div><img /></div>
+              <div>
+                <p>Arcade</p>
+                <p>$9/mo</p>
+              </div>
+            </div>
+            <div id="advanced">
+              <div><img /></div>
+              <div>
+                <p>Advanced</p>
+                <p>$12/mo</p>
+              </div>
+            </div>
+            <div id="pro">
+              <div><img /></div>
+              <div>
+                <p>Pro</p>
+                <p>$15/mo</p>
+              </div>
+            </div>
+            <div>Monthly Yearly</div>
           </div>
 
-          <div class="step2">
-            <div class="step" id="step-2">
+          <div class="step" id="step-3">
+            <div>
+              <h3 class="title">Pick add-ons</h3>
+              <p class="description">
+                Add-ons help enhance your gaming experience.
+              </p>
+            </div>
+            <div id="addon-online-service">
+              <div><img /></div>
               <div>
-                <h3 class="title">Select your plan</h3>
-                <p class="description">
-                  You have the option of monthly or yearly billing.
-                </p>
+                <p>Online service</p>
+                <p>Access to multiplayer games</p>
               </div>
-              <div id="arcade">
-                <div><img /></div>
-                <div>
-                  <p>Arcade</p>
-                  <p>$9/mo</p>
-                </div>
+              <div>+$1/mo</div>
+            </div>
+            <div id="addon-larger-storage">
+              <div><img /></div>
+              <div>
+                <p>Larger storage</p>
+                <p>Extra 1TB of cloud save</p>
               </div>
-              <div id="advanced">
-                <div><img /></div>
-                <div>
-                  <p>Advanced</p>
-                  <p>$12/mo</p>
-                </div>
+              <div>+$2/mo</div>
+            </div>
+            <div id="addon-custom">
+              <div><img /></div>
+              <div>
+                <p>Customizable Profile</p>
+                <p>Custom theme on your profile</p>
               </div>
-              <div id="pro">
-                <div><img /></div>
-                <div>
-                  <p>Pro</p>
-                  <p>$15/mo</p>
-                </div>
-              </div>
-              <div>Monthly Yearly</div>
+              <div>+$2/mo</div>
+            </div>
+            <div>Monthly Yearly</div>
+          </div>
+
+          <div class="step" id="step-4">
+            <div>
+              <h3 class="title">Finishing up</h3>
+              <p class="description">
+                Double-check everything looks OK before confirming.
+              </p>
+            </div>
+            <div id="summary">
+              <div id="subscription"></div>
+              <div id="total">Total (per month/year)</div>
             </div>
           </div>
 
-          <div class="step3">
-            <div class="step" id="step-3">
-              <div>
-                <h3 class="title">Pick add-ons</h3>
-                <p class="description">
-                  Add-ons help enhance your gaming experience.
-                </p>
-              </div>
-              <div id="addon-online-service">
-                <div><img /></div>
-                <div>
-                  <p>Online service</p>
-                  <p>Access to multiplayer games</p>
-                </div>
-                <div>+$1/mo</div>
-              </div>
-              <div id="addon-larger-storage">
-                <div><img /></div>
-                <div>
-                  <p>Larger storage</p>
-                  <p>Extra 1TB of cloud save</p>
-                </div>
-                <div>+$2/mo</div>
-              </div>
-              <div id="addon-custom">
-                <div><img /></div>
-                <div>
-                  <p>Customizable Profile</p>
-                  <p>Custom theme on your profile</p>
-                </div>
-                <div>+$2/mo</div>
-              </div>
-              <div>Monthly Yearly</div>
-            </div>
-          </div>
-          <div class="step4">
-            <div class="step" id="step-4">
-              <div>
-                <h3 class="title">Finishing up</h3>
-                <p class="description">
-                  Double-check everything looks OK before confirming.
-                </p>
-              </div>
-              <div id="summary">
-                <div id="subscription"></div>
-                <div id="total">Total (per month/year)</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="step5">
-            <div class="step" id="step-4">
-              <div>
-                <h3 class="title">Thank you!</h3>
-                <div class="icon-tick"></div>
-                <p class="description">
-                  Thanks for confirming your subscription! We hope you have fun
-                  using our platform. If you ever need support, please feel free
-                  to email us at support@loremgaming.com.
-                </p>
-              </div>
+          <div class="step" id="step-5">
+            <div>
+              <h3 class="title">Thank you!</h3>
+              <div class="icon-tick"></div>
+              <p class="description">
+                Thanks for confirming your subscription! We hope you have fun
+                using our platform. If you ever need support, please feel free
+                to email us at support@loremgaming.com.
+              </p>
             </div>
           </div>
           <div class="button-container">
@@ -223,12 +210,6 @@
         </div>
       </div>
     </main>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <script src="./script.js"></script>
   </body>
 </html>
